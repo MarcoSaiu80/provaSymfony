@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Create User</h1>
+    {{ form_start(form)  }}
+    {{ form_label(form.name)    }}
+    {{ form_errors(form.name)    }}
+    {{ form_widget(form.name)  }}
+    <button type="submit">Premi</button>
+    {{ form_end(form)  }}
+
+{% endblock %}
